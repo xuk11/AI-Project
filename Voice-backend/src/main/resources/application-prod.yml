@@ -1,0 +1,40 @@
+# 线上配置文件
+# @author <a href="https://github.com/qwerzbn">zbn</a>
+# @date 2024/06/23
+server:
+  port: 8101
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-8fw6oxv6.sql.tencentcdb.com:25697/Voice_db
+    username: root
+    password: Zbn200212
+  # Redis 配置
+  redis:
+    database: 1
+    host: 1.117.233.91
+    port: 6379
+    timeout: 5000
+    password: zbn200212
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
+# 接口文档配置
+knife4j:
+  basic:
+    enable: true
+    username: root
+    password: 123456
+cos:
+  client:
+    host: https://voice-1325205761.cos.ap-guangzhou.myqcloud.com
+    secretId: AKIDKTSG7kCTabR7arxtbBetuiIfplV4SdbL
+    secretKey: bzA8yb0CAvWu41rdRCcw3xLacUAh194m
+    region: ap-guangzhou
+    bucket: voice-1325205761
+ark:
+  config:
+    api-key: dff59ffc-3d20-4ce2-84b4-5c66ba3f7b6a
+    base-url: https://ark.cn-beijing.volces.com/api/v3

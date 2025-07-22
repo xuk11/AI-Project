@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbn.springbootinit.mapper.ChapterMapper">
+
+    <resultMap id="BaseResultMap" type="com.zbn.springbootinit.model.entity.Chapter">
+        <id property="id" column="id"/>
+        <result property="articleId" column="articleId"/>
+        <result property="chapterTitle" column="chapterTitle"/>
+        <result property="content" column="content"/>
+        <result property="chapterOrder" column="chapterOrder"/>
+        <result property="wordCount" column="wordCount"/>
+        <result property="isFree" column="isFree"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="isDelete" column="isDelete"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,articleId,chapterTitle,content,chapterOrder,wordCount,
+        isFree,createTime,updateTime,isDelete
+    </sql>
+</mapper>

@@ -1,0 +1,11 @@
+cos:
+  client:
+    host: https://voice-1325205761.cos.ap-guangzhou.myqcloud.com
+    secretId: AKIDKTSG7kCTabR7arxtbBetuiIfplV4SdbL
+    secretKey: bzA8yb0CAvWu41rdRCcw3xLacUAh194m
+    region: ap-guangzhou
+    bucket: voice-1325205761
+ark:
+  config:
+    api-key: dff59ffc-3d20-4ce2-84b4-5c66ba3f7b6a
+    base-url: https://ark.cn-beijing.volces.com/api/v3

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbn.springbootinit.mapper.ArticleMapper">
+
+    <resultMap id="BaseResultMap" type="com.zbn.springbootinit.model.entity.Article">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="summary" column="summary"/>
+        <result property="author" column="author"/>
+        <result property="tags" column="tags"/>
+        <result property="coverImage" column="coverImage"/>
+        <result property="viewsCount" column="viewsCount"/>
+        <result property="likesCount" column="likesCount"/>
+        <result property="SEOTitle" column="SEOTitle"/>
+        <result property="SEODescription" column="SEODescription"/>
+        <result property="SEOKeywords" column="SEOKeywords"/>
+        <result property="priority" column="priority"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="isDelete" column="isDelete"/>
+        <result property="userId" column="userId"/>
+        <result property="countSize" column="countSize"/>
+        <result property="categoryCount" column="categoryCount"/>
+        <result property="type" column="type"/>
+        <result property="description" column="description"/>
+        <result property="status" column="status"/>
+        <result property="category" column="category"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,title,content,summary,author,tags,
+        coverImage,viewsCount,likesCount,SEOTitle,SEODescription,
+        SEOKeywords,priority,createTime,updateTime,isDelete,
+        userId,countSize,categoryCount,type,description,
+        status,category
+    </sql>
+</mapper>
