@@ -1,0 +1,106 @@
+.ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button'] .ant-steps-item-icon .ant-steps-icon {
+    transition: color 0.3s;
+    color: white !important;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+    background-color: rgb(255 255 255 / 6%) !important;
+    border-color: transparent;
+}
+
+.ant-steps .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* For modern browsers (including Edge 15+ and Safari 10.1+) */
+::placeholder {
+    color: rgba(128, 128, 128, 0.5) !important; /* 修改为你想要的颜色 */
+}
+
+/* For older versions of Firefox (< v51) */
+::-moz-placeholder {
+    color: rgba(128, 128, 128, 0.5) !important;
+    opacity: 1; /* 某些情况下你可能还需要设置opacity为1以避免默认的透明度 */
+}
+
+/* For Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    color: rgba(128, 128, 128, 0.5) !important;
+}
+
+/* For Microsoft Edge before version 15 */
+:-ms-input-placeholder {
+    color: rgba(128, 128, 128, 0.5) !important;
+}
+
+.ant-tabs .ant-tabs-tab-btn {
+    color: white !important;
+    outline: none;
+    transition: all 0.3s;
+    font-size: large;
+}
+
+.ant-pagination .ant-pagination-item a {
+    display: block;
+    padding: 0 6px;
+    color: rgb(255 255 255  / 88%);
+    transition: none;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    font-weight: 600;
+    background-color: #000;
+    border-color: #1677ff;
+}
+
+.ant-pagination .ant-pagination-total-text {
+    display: inline-block;
+    height: 32px;
+    margin-inline-end: 8px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: white;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link, :where(.css-dev-only-do-not-override-1p3hq3p).ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link {
+    color: rgb(255 255 255 / 25%);
+    cursor: not-allowed;
+}
+
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link, :where(.css-dev-only-do-not-override-1p3hq3p).ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    background-color: #00000000;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s;
+    color: white;
+}
+
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+    line-height: 1.5714285714285714;
+    flex: auto;
+    transition: all 0.3s;
+    color: white;
+}
+
+.ant-progress .ant-progress-text {
+    display: inline-block;
+    width: 2em;
+    margin-inline-start: 8px;
+    color: rgb(255 255 0 / 88%);
+    line-height: 1;
+    white-space: nowrap;
+    text-align: start;
+    vertical-align: middle;
+    word-break: normal;
+}
