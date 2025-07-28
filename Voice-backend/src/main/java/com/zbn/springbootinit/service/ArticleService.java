@@ -41,7 +41,7 @@ public interface ArticleService extends IService<Article> {
     ArticleVO getArticleVO(Article article, HttpServletRequest request);
 
     /**
-     * 分页获取音频文件封装
+     * 分页获取文章的封装
      *
      * @param articlePage
      * @param request
